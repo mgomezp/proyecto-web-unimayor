@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Backend - Tutor HTML5 CSS</title>
+	<link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon" />
+
+	<!-- Fuentes -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+	
+	<!-- Estilos -->
+	<link rel="stylesheet" type="text/css" href="css/estilo2.css">
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+	<header>
+		<!-- Menú de Navegación -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand fw-bold" href="home.html">Tutor <span style="color:var(--lime-400);">Web</span></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Alternar navegación">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="menuNavegacion">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item"><a class="nav-link" href="home.html">Inicio</a></li>
+						<li class="nav-item"><a class="nav-link" href="conceptos.html">Conceptos</a></li>
+						<li class="nav-item"><a class="nav-link" href="Apis.html">Api</a></li>
+						<li class="nav-item"><a class="nav-link" href="Frontend.html">Frontend</a></li>
+						<!-- Pestaña Backend Activa -->
+						<li class="nav-item"><a class="nav-link active" aria-current="page" href="backend.html">Backend</a></li>
+						<li class="nav-item"><a class="nav-link" href="cascada.html">CSS</a></li>
+						<li class="nav-item"><a class="nav-link" href="datos.html">Presentación</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<img src="imagenes/cabecera1.png" class="w-100" style="height: 300px; object-fit: cover; object-position: center;" alt="Cabecera del curso">
+	</header>
+
+	<main class="container my-5">
+		
+		<div class="text-center mb-5">
+			<h2 class="fw-bold" style="color: var(--lime-400);">Desarrollo Backend</h2>
+			<p class="text-white-50">La sala de máquinas: todo lo que ocurre detrás de escena para que el sistema sea seguro, funcional y dinámico.</p>
+		</div>
+
+		<!-- SECCIÓN CENTRAL: Los 5 Conceptos Clave -->
+		<div class="row g-4 mb-5">
+			
+			<!-- Fila 1: 3 Tarjetas -->
+			<div class="col-lg-4">
+				<div class="card card-backend-custom h-100 shadow-sm">
+					<div class="card-body p-4">
+						<h1 class="display-5 mb-3">🖥️</h1>
+						<h5 class="fw-bold text-white">1. El Servidor</h5>
+						<p class="text-white-50 small mb-0">Es el computador o entorno (como Apache en XAMPP) que está encendido las 24 horas esperando peticiones del Frontend. Procesa la información usando lenguajes como Java, PHP o Python y devuelve una respuesta.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4">
+				<div class="card card-backend-custom h-100 shadow-sm">
+					<div class="card-body p-4">
+						<h1 class="display-5 mb-3">🗄️</h1>
+						<h5 class="fw-bold text-white">2. Bases de Datos</h5>
+						<p class="text-white-50 small mb-0">La bóveda de información permanente. Pueden ser <strong>Relacionales (SQL)</strong>, que usan tablas estrictas, o <strong>No Relacionales (NoSQL)</strong>, que guardan datos en formatos flexibles tipo JSON.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4">
+				<div class="card card-backend-custom h-100 shadow-sm">
+					<div class="card-body p-4">
+						<h1 class="display-5 mb-3">⚙️</h1>
+						<h5 class="fw-bold text-white">3. Lógica de Negocio</h5>
+						<p class="text-white-50 small mb-0">Son las reglas matemáticas, condiciones y procesos. Por ejemplo, si compras un boleto, la lógica verifica si hay asientos, descuenta el saldo y te envía un correo de confirmación.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Fila 2: 2 Tarjetas más anchas -->
+			<div class="col-lg-6">
+				<div class="card card-backend-custom h-100 shadow-sm border-start border-4" style="border-left-color: var(--lime-400) !important;">
+					<div class="card-body p-4">
+						<h5 class="fw-bold text-white mb-3"><span class="me-2" style="color: var(--lime-400);">🚪</span>4. Enrutamiento y APIs</h5>
+						<p class="text-white-50 small mb-0">Es el mapa de "puertas" del servidor. Define qué código ejecutar según la URL (Endpoint) solicitada. Si el Frontend pide <code>/api/jugadores</code>, el enrutador sabe exactamente a qué base de datos ir a buscar la lista.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-6">
+				<div class="card card-backend-custom h-100 shadow-sm border-start border-danger border-4">
+					<div class="card-body p-4">
+						<h5 class="fw-bold text-white mb-3"><span class="text-danger me-2">🛡️</span>5. Seguridad y Autenticación</h5>
+						<p class="text-white-50 small mb-0">El guardia de seguridad. El Backend <strong>nunca</strong> confía ciegamente en el Frontend. Se encarga de validar contraseñas, generar Tokens, verificar permisos (Autorización) y bloquear ataques cibernéticos.</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<!-- SECCIÓN DE EJEMPLOS PRÁCTICOS -->
+		<div class="text-center mt-5 mb-4">
+			<h3 class="fw-bold text-white">Laboratorio Práctico</h3>
+			<p class="text-white-50">Simula cómo piensa y responde un Servidor Backend ante diferentes situaciones.</p>
+		</div>
+
+		<div class="row g-4">
+			
+			<!-- Simulador 1: Enrutamiento -->
+			<div class="col-12">
+				<div class="card card-backend-custom shadow-sm">
+					<div class="card-header fw-bold py-3">Simulador 1: Enrutamiento (Router)</div>
+					<div class="card-body row align-items-center p-4">
+						<div class="col-md-6 border-end border-secondary">
+							<p class="text-white-50 small mb-3">Ingresa una de las rutas disponibles en nuestro servidor simulado y observa qué devuelve.</p>
+							
+							<div class="mb-3">
+								<span class="badge bg-dark border border-secondary text-light">/api/jugadores</span>
+								<span class="badge bg-dark border border-secondary text-light">/api/estado</span>
+							</div>
+
+							<div class="input-group mb-3">
+								<span class="input-group-text bg-dark text-white border-secondary">miservidor.com</span>
+								<input type="text" id="inputRuta" class="form-control bg-dark text-white border-secondary" placeholder="Ej: /api/jugadores">
+								<button class="btn fw-bold" id="btnRuta" style="background-color: var(--lime-400); color: var(--navy-900);">Enviar GET</button>
+							</div>
+						</div>
+						<div class="col-md-6 ps-md-4 mt-4 mt-md-0">
+							<p class="text-white-50 small mb-2">Respuesta del Servidor (JSON):</p>
+							<div id="consolaRuta" class="consola-backend">
+								<span class="text-white-50">Esperando petición...</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Simulador 2: Seguridad y Autenticación -->
+			<div class="col-12">
+				<div class="card card-backend-custom shadow-sm mb-5">
+					<div class="card-header fw-bold py-3">Simulador 2: Seguridad (Login y Tokens)</div>
+					<div class="card-body row align-items-center p-4">
+						<div class="col-md-6 border-end border-secondary">
+							<p class="text-white-50 small mb-3">El servidor debe validar las credenciales. Prueba ingresar los datos correctos o inventar unos falsos.</p>
+							
+							<div class="alert py-2 small border border-secondary mb-3" style="background-color: var(--navy-900); color: var(--white);">
+								<strong>Datos válidos:</strong> Usuario: <code style="color: var(--lime-400);">admin</code> | Clave: <code style="color: var(--lime-400);">1234</code>
+							</div>
+
+							<div class="row g-2 mb-3">
+								<div class="col-6">
+									<input type="text" id="inputUser" class="form-control bg-dark text-white border-secondary" placeholder="Usuario">
+								</div>
+								<div class="col-6">
+									<input type="password" id="inputPass" class="form-control bg-dark text-white border-secondary" placeholder="Contraseña">
+								</div>
+							</div>
+							<button class="btn btn-danger w-100 fw-bold" id="btnLogin">Intentar Iniciar Sesión (POST)</button>
+						</div>
+						<div class="col-md-6 ps-md-4 mt-4 mt-md-0">
+							<p class="text-white-50 small mb-2">Log de Seguridad del Backend:</p>
+							<div id="consolaLogin" class="consola-backend">
+								<span class="text-white-50">Esperando credenciales...</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</main>
+
+	<footer class="bg-dark text-white text-center py-4 mt-5 border-top border-secondary">
+		<div class="container">
+			<p class="mb-0 text-white-50">© 2026 Tutor Web. Desarrollo web moderno.</p>
+		</div>
+	</footer>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+	<!-- Scripts interactivos simulando el Backend -->
+	<script>
+		// --- Lógica del Simulador de Enrutamiento ---
+		document.getElementById('btnRuta').addEventListener('click', function() {
+			let ruta = document.getElementById('inputRuta').value.trim().toLowerCase();
+			let consola = document.getElementById('consolaRuta');
+			
+			if(ruta === '/api/jugadores') {
+				consola.innerHTML = `<span style="color:#4caf50;">HTTP 200 OK</span><br>{<br>&nbsp; "status": "success",<br>&nbsp; "data": ["Falcao", "Bacca", "James"]<br>}`;
+			} 
+			else if(ruta === '/api/estado') {
+				consola.innerHTML = `<span style="color:#4caf50;">HTTP 200 OK</span><br>{<br>&nbsp; "servidor": "Online",<br>&nbsp; "version": "1.0.4"<br>}`;
+			} 
+			else if(ruta === "") {
+				consola.innerHTML = `<span class="text-warning">Advertencia:</span><br>Debes ingresar una ruta.`;
+			}
+			else {
+				consola.innerHTML = `<span style="color:#f44336;">HTTP 404 Not Found</span><br>{<br>&nbsp; "error": "La ruta '${ruta}' no existe en este servidor."<br>}`;
+			}
+		});
+
+		// --- Lógica del Simulador de Seguridad (Login) ---
+		document.getElementById('btnLogin').addEventListener('click', function() {
+			let user = document.getElementById('inputUser').value.trim();
+			let pass = document.getElementById('inputPass').value.trim();
+			let consola = document.getElementById('consolaLogin');
+			
+			if(user === 'admin' && pass === '1234') {
+				consola.innerHTML = `<span style="color:#4caf50;">HTTP 200 OK - Autenticado</span><br>Generando Token JWT...<br><br><span style="color:#ffeb3b; word-break: break-all;">eyJhGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4ifQ</span>`;
+			} else {
+				consola.innerHTML = `<span style="color:#f44336;">HTTP 401 Unauthorized</span><br>{<br>&nbsp; "alerta": "Credenciales incorrectas.",<br>&nbsp; "accion": "Acceso denegado"<br>}`;
+			}
+		});
+	</script>
+
+</body>
+</html>

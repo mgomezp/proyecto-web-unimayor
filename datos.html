@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Presentación - Tutor Web</title>
+	<link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon" />
+
+	<!-- Fuentes -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+	
+	<!-- Hoja de estilos principal -->
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body style="background-color: var(--navy-900); color: var(--ink);">
+
+	<header>
+		<!-- Menú de Navegación -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand fw-bold" href="home.html">Tutor <span style="color:var(--lime-400);">Web</span></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Alternar navegación">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="menuNavegacion">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item"><a class="nav-link" href="home.html">Inicio</a></li>
+						<li class="nav-item"><a class="nav-link" href="conceptos.html">Conceptos</a></li>
+						<li class="nav-item"><a class="nav-link" href="Apis.html">Api</a></li>
+						<li class="nav-item"><a class="nav-link" href="Frontend.html">Frontend</a></li>
+						<li class="nav-item"><a class="nav-link" href="backend.html">Backend</a></li>
+						<li class="nav-item"><a class="nav-link" href="cascada.html">CSS</a></li>
+						<li class="nav-item"><a class="nav-link active" aria-current="page" href="datos.html">Presentación</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Imagen de cabecera -->
+		<img src="imagenes/cabecera1.png" class="w-100" style="height: 300px; object-fit: cover; object-position: center;" alt="Cabecera del curso">
+	</header>
+
+	<main class="container my-5">
+		
+		<div class="text-center mb-5">
+			<h2 class="fw-bold" style="color: var(--lime-400);">Presentación Personal</h2>
+			<p class="text-white-50">Conoce al creador detrás de este proyecto de desarrollo web.</p>
+		</div>
+
+		<div class="row g-5 mb-5">
+			
+			<!-- Columna Izquierda: Perfil y Datos Personales -->
+			<div class="col-lg-4">
+				<div class="cv-card p-4 text-center h-100 d-flex flex-column align-items-center">
+					<!-- Foto de perfil -->
+					<img src="imagenes/perfil.png" class="cv-foto rounded-circle mb-3 shadow" alt="Foto de Miguel Angel Gomez Plaza">
+					
+					<h3 class="fw-bold text-white mb-1">Miguel Angel Gomez Plaza</h3>
+					<p class="text-white-50 small mb-2">Estudiante de Ingeniería Informática</p>
+					
+					<!-- Recuadro / Línea divisoria -->
+					<div class="cv-separador"></div>
+
+					<div class="w-100 text-start pt-2">
+						<p class="small mb-3"><strong>📍 Ubicación:</strong> Popayán, Colombia</p>
+						<p class="small mb-3"><strong>🏛️ Institución:</strong> I.U. Colegio Mayor del Cauca</p>
+						<p class="small mb-0"><strong>✉️ Perfil:</strong> Apasionado por el desarrollo web, las bases de datos y las arquitecturas de software modernas.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Columna Derecha: Habilidades y Recorrido Académico -->
+			<div class="col-lg-8">
+				
+				<!-- Tarjeta de Habilidades -->
+				<div class="cv-card p-4 mb-4">
+					<h4 class="fw-bold text-white mb-4"><span style="color: var(--lime-400);">⚡</span> Habilidades Técnicas</h4>
+					
+					<div class="d-flex flex-wrap gap-2">
+						<span class="badge-skill">HTML5 Semántico</span>
+						<span class="badge-skill">CSS3 / Flexbox / Grid</span>
+						<span class="badge-skill">JavaScript (DOM / Fetch)</span>
+						<span class="badge-skill">Java (POO)</span>
+						<span class="badge-skill">Python</span>
+						<span class="badge-skill">Bases de Datos SQL</span>
+						<span class="badge-skill">Cisco Networking</span>
+						<span class="badge-skill">Git & GitHub</span>
+					</div>
+				</div>
+
+				<!-- Tarjeta de Recorrido Académico -->
+				<div class="cv-card p-4">
+					<h4 class="fw-bold text-white mb-4"><span style="color: var(--lime-400);">🎓</span> Recorrido Académico</h4>
+					
+					<div class="timeline">
+						
+						<!-- Universidad -->
+						<div class="timeline-item">
+							<span class="badge mb-2" style="background-color: var(--lime-400); color: var(--navy-900); font-weight: 700;">En curso (2026)</span>
+							<h5 class="fw-bold text-white mb-1">Ingeniería Informática</h5>
+							<p class="text-white small mb-2">Institución Universitaria Colegio Mayor del Cauca (Popayán)</p>
+							<p class="text-white-50 small mb-0">Formación integral enfocada en el diseño de software, modelado de bases de datos, redes de computadores, sistemas operativos y desarrollo de soluciones tecnológicas aplicadas.</p>
+						</div>
+
+						<!-- Bachillerato -->
+						<div class="timeline-item mb-0">
+							<span class="badge bg-secondary mb-2">Completado (2024)</span>
+							<h5 class="fw-bold text-white mb-1">Educación Media / Bachillerato</h5>
+							<p class="text-white small mb-2">Graduación y Formación Básica</p>
+							<p class="text-white-50 small mb-0">Culminación exitosa de los estudios secundarios con enfoque académico, sentando las bases analíticas para iniciar la educación superior en ingeniería.</p>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- SECCIÓN INTERACTIVA: Simulador de Base de Datos -->
+		<section class="p-5 rounded-4 shadow-lg border border-secondary mt-5" style="background-color: var(--navy-800);">
+			<div class="text-center mb-4">
+				<h3 class="fw-bold text-white"><span style="color: var(--lime-400);">🗄️</span> Simulador de Base de Datos: Registro de Usuarios</h3>
+				<p class="text-white-50 small">Registra un nuevo usuario ingresando tus datos y observa cómo se almacenan en tiempo real como registros de una tabla.</p>
+			</div>
+
+			<div class="row g-4 align-items-center">
+				<!-- Formulario -->
+				<div class="col-lg-5">
+					<div class="p-4 rounded border border-secondary" style="background-color: var(--navy-900);">
+						<h5 class="fw-bold text-white mb-3">Nuevo Registro (INSERT INTO)</h5>
+						
+						<div class="mb-3">
+							<label class="form-label text-white-50 small">Nombre completo</label>
+							<input type="text" id="regNombre" class="form-control bg-dark text-white border-secondary" placeholder="Ej: Ana María Pérez">
+						</div>
+
+						<div class="mb-3">
+							<label class="form-label text-white-50 small">Correo electrónico</label>
+							<input type="email" id="regEmail" class="form-control bg-dark text-white border-secondary" placeholder="Ej: ana@unimayor.edu.co">
+						</div>
+
+						<div class="mb-4">
+							<label class="form-label text-white-50 small">Contraseña</label>
+							<input type="password" id="regPassword" class="form-control bg-dark text-white border-secondary" placeholder="••••••••">
+						</div>
+
+						<button id="btnRegistrar" class="btn w-100 fw-bold" style="background-color: var(--lime-400); color: var(--navy-900);">Guardar en Base de Datos</button>
+					</div>
+				</div>
+
+				<!-- Visualizador de registros -->
+				<div class="col-lg-7">
+					<p class="text-white-50 small mb-2">Registros almacenados en la Base de Datos (Tabla <code>usuarios</code>):</p>
+					<div id="dbConsola" class="db-console">
+						<span class="text-muted fst-italic" id="dbVacia">-- No hay registros recientes en la tabla --</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="bg-dark text-white text-center py-4 mt-5 border-top border-secondary">
+		<div class="container">
+			<p class="mb-0 text-white-50">© 2026 Tutor Web. Desarrollo web moderno.</p>
+		</div>
+	</footer>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+	<!-- Script interactivo de la Base de Datos -->
+	<script>
+		let idContador = 1;
+
+		document.getElementById('btnRegistrar').addEventListener('click', function() {
+			let nombre = document.getElementById('regNombre').value.trim();
+			let email = document.getElementById('regEmail').value.trim();
+			let password = document.getElementById('regPassword').value.trim();
+			let consola = document.getElementById('dbConsola');
+			let mensajeVacio = document.getElementById('dbVacia');
+
+			if(nombre === "" || email === "" || password === "") {
+				alert("Por favor completa todos los campos para realizar el registro.");
+				return;
+			}
+
+			if(mensajeVacio) {
+				mensajeVacio.style.display = 'none';
+			}
+
+			let passOculta = "•".repeat(password.length);
+
+			let nuevoRegistro = document.createElement('div');
+			nuevoRegistro.className = 'db-record';
+			nuevoRegistro.innerHTML = `
+				<div class="d-flex justify-content-between align-items-center mb-1">
+					<strong style="color: var(--lime-400);">ID: #${idContador}</strong>
+					<span class="badge bg-success" style="font-size: 0.7rem;">INSERT SUCCESS</span>
+				</div>
+				<p class="mb-1 text-white"><strong>Nombre:</strong> ${nombre}</p>
+				<p class="mb-1 text-white-50 small"><strong>Correo:</strong> ${email}</p>
+				<p class="mb-0 text-white-50 small"><strong>Contraseña:</strong> <span style="font-family: monospace; color: #ffeb3b;">${passOculta}</span></p>
+			`;
+
+			consola.prepend(nuevoRegistro);
+			idContador++;
+
+			document.getElementById('regNombre').value = '';
+			document.getElementById('regEmail').value = '';
+			document.getElementById('regPassword').value = '';
+		});
+	</script>
+
+</body>
+</html>

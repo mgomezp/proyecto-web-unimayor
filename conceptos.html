@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Teoría Web - Tutor HTML5 CSS</title>
+	<link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon" />
+
+	<!-- Fuentes -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+	
+	<!-- Hoja de estilos principal -->
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body style="background-color: var(--navy-900); color: var(--ink);">
+
+	<header>
+		<!-- Menú de Navegación -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand fw-bold" href="home.html">Tutor <span style="color:var(--lime-400);">Web</span></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Alternar navegación">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="menuNavegacion">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item"><a class="nav-link" href="home.html">Inicio</a></li>
+						<li class="nav-item"><a class="nav-link active" aria-current="page" href="conceptos.html">Conceptos</a></li>
+						<li class="nav-item"><a class="nav-link" href="Apis.html">Api</a></li>
+						<li class="nav-item"><a class="nav-link" href="Frontend.html">Frontend</a></li>
+						<li class="nav-item"><a class="nav-link" href="backend.html">Backend</a></li>
+						<li class="nav-item"><a class="nav-link" href="cascada.html">CSS</a></li>
+						<li class="nav-item"><a class="nav-link" href="datos.html">Presentación</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Imagen de cabecera -->
+		<img src="imagenes/cabecera1.png" class="w-100" style="height: 300px; object-fit: cover; object-position: center;" alt="Cabecera del curso">
+	</header>
+
+	<main class="container my-5">
+		
+		<div class="text-center mb-5">
+			<h2 class="fw-bold" style="color: var(--lime-400);">Evolución de Sistemas Computacionales</h2>
+			<p class="text-white-50">Explora cómo ha cambiado la arquitectura del software a lo largo del tiempo, expandiendo cada sección o revisando el resumen de la línea de tiempo.</p>
+		</div>
+		
+		<!-- Contenedor del Acordeón -->
+		<div class="accordion acordeon-moderno mb-5" id="accordionConceptos">
+			
+			<!-- Ítem 1: MainFrame -->
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						1. MainFrame (Años 60s)
+					</button>
+				</h2>
+				<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionConceptos">
+					<div class="accordion-body">
+						<div class="row align-items-center">
+							<div class="col-md-4 text-center mb-4 mb-md-0">
+								<img src="imagenes/mainframe.png" class="img-fluid rounded border border-secondary" alt="Computador Mainframe">
+							</div>
+							<div class="col-md-8">
+								<h4 class="fw-bold mb-3 text-white">El gigante del procesamiento</h4>
+								<p>Un <strong>Mainframe</strong> es un computador de gran capacidad diseñado para procesar enormes cantidades de datos y ejecutar múltiples operaciones de manera simultánea, segura y confiable.</p>
+								<p>Son utilizados principalmente por <strong>bancos, entidades gubernamentales, compañías de seguros y aerolíneas</strong> que requieren alta disponibilidad continua.</p>
+								
+								<div class="d-flex gap-2 mt-4 flex-wrap">
+									<span class="badge text-dark" style="background-color: var(--lime-400) !important;">Alta Capacidad</span>
+									<span class="badge text-dark" style="background-color: var(--teal-300) !important;">Procesamiento en Lotes</span>
+									<span class="badge text-dark" style="background-color: var(--lime-400) !important;">24/7 Disponibilidad</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Ítem 2: Terminal Bruta -->
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						2. Terminal Bruta
+					</button>
+				</h2>
+				<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionConceptos">
+					<div class="accordion-body">
+						<div class="row align-items-center">
+							<div class="col-md-4 text-center mb-4 mb-md-0">
+								<img src="imagenes/terminal.png" class="img-fluid rounded border border-secondary" alt="Terminal Bruta">
+							</div>
+							<div class="col-md-8">
+								<h4 class="fw-bold mb-3 text-white">Solo pantalla y teclado</h4>
+								<p>Una <strong>Terminal Bruta (Dumb Terminal)</strong> es un dispositivo sin capacidad de procesamiento ni almacenamiento propio. Su única función es conectar al usuario con el Mainframe central.</p>
+								<p>La terminal bruta transmite las pulsaciones del teclado y muestra los resultados que el servidor procesa y envía de regreso por la red.</p>
+								
+								<div class="alert py-2 mt-3 mb-0 border-0" style="background-color: var(--navy-800); color: var(--teal-300);">
+									<strong>¿Sabías que?</strong> No podían ejecutar ni un solo programa por sí mismas; si el servidor central se apagaba, la terminal quedaba completamente inútil.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Ítem 3: Cliente Servidor -->
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						3. Arquitectura Cliente-Servidor
+					</button>
+				</h2>
+				<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionConceptos">
+					<div class="accordion-body">
+						<div class="row align-items-center">
+							<div class="col-md-4 text-center mb-4 mb-md-0">
+								<img src="imagenes/cliente_servidor1.png" class="img-fluid rounded border border-secondary" alt="Esquema Cliente Servidor">
+							</div>
+							<div class="col-md-8">
+								<h4 class="fw-bold mb-3 text-white">La base de Internet</h4>
+								<p>En este modelo, un <strong>cliente</strong> (que ahora sí tiene inteligencia, como un navegador web o un teléfono inteligente) solicita recursos, y un <strong>servidor</strong> los procesa y entrega.</p>
+								
+								<ul class="list-group list-group-flush mt-3">
+									<li class="list-group-item px-0 border-0 bg-transparent text-white">✅ <strong>Cliente:</strong> Pide información (Ej: Tu celular abriendo Instagram).</li>
+									<li class="list-group-item px-0 border-0 bg-transparent text-white">✅ <strong>Servidor:</strong> Valida y entrega la información (Ej: Los servidores de Meta).</li>
+									<li class="list-group-item px-0 border-0 bg-transparent text-white">✅ <strong>Red:</strong> El medio por donde viajan los datos (Internet).</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Ítem 4: Cliente Servidor Multinivel -->
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+						4. Cliente Servidor Multinivel
+					</button>
+				</h2>
+				<div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionConceptos">
+					<div class="accordion-body">
+						<h4 class="fw-bold mb-4 text-center text-white">Separación de responsabilidades</h4>
+						<p class="text-center text-white-50 mb-5">El modelo moderno (N-Tier) divide las tareas en tres grandes capas para que el software sea más seguro y fácil de actualizar.</p>
+						
+						<div class="row g-4 text-center">
+							<div class="col-md-4">
+								<div class="p-4 rounded card-teoria h-100 border-top border-warning border-4">
+									<h5 class="fw-bold" style="color: var(--lime-400);">1. Capa de Presentación</h5>
+									<p class="text-white-50 small mb-0">La interfaz gráfica con la que interactúa el usuario (HTML, CSS, Frontend).</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="p-4 rounded card-teoria h-100 border-top border-info border-4">
+									<h5 class="fw-bold" style="color: var(--teal-300);">2. Capa de Negocio</h5>
+									<p class="text-white-50 small mb-0">El cerebro de la aplicación. Contiene la lógica, reglas y cálculos (Backend, APIs).</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="p-4 rounded card-teoria h-100 border-top border-secondary border-4">
+									<h5 class="fw-bold text-white">3. Capa de Datos</h5>
+									<p class="text-white-50 small mb-0">Donde se almacena la información de forma persistente (Bases de datos SQL/NoSQL).</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- LÍNEA DE TIEMPO INTERACTIVA DE RESUMEN -->
+		<section class="mt-5 pt-4">
+			<div class="text-center mb-5">
+				<h3 class="fw-bold text-white">Línea de Tiempo: Resumen Histórico</h3>
+				<p class="text-white-50 small">De la centralización absoluta a la distribución por capas modernas.</p>
+			</div>
+
+			<div class="timeline-horizontal">
+				<div class="timeline-steps">
+					
+					<div class="timeline-step">
+						<div class="timeline-dot">01</div>
+						<h5>Mainframe</h5>
+						<p>Grandes servidores centralizados que procesaban lotes masivos de datos para grandes empresas.</p>
+					</div>
+
+					<div class="timeline-step">
+						<div class="timeline-dot">02</div>
+						<h5>Terminal Bruta</h5>
+						<p>Pantallas sin procesamiento propio; dependían enteramente de la conexión al servidor central.</p>
+					</div>
+
+					<div class="timeline-step">
+						<div class="timeline-dot">03</div>
+						<h5>Cliente-Servidor</h5>
+						<p>Reparto de tareas donde dispositivos inteligentes solicitan recursos a servidores dedicados.</p>
+					</div>
+
+					<div class="timeline-step">
+						<div class="timeline-dot">04</div>
+						<h5>Multinivel (N-Tier)</h5>
+						<p>Estructura modular dividida en capas independientes: Presentación, Negocio y Datos.</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="bg-dark text-white text-center py-4 mt-5 border-top border-secondary">
+		<div class="container">
+			<p class="mb-0 text-white-50">© 2026 Tutor Web. Desarrollo web moderno.</p>
+		</div>
+	</footer>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Frontend - Tutor HTML5 CSS</title>
+	<link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon" />
+
+	<!-- Fuentes -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+	
+	<!-- Estilos -->
+	<link rel="stylesheet" type="text/css" href="css/estilo2.css">
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+	<header>
+		<!-- Menú de Navegación -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand fw-bold" href="home.html">Tutor <span style="color:var(--lime-400);">Web</span></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Alternar navegación">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="menuNavegacion">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item"><a class="nav-link" href="home.html">Inicio</a></li>
+						<li class="nav-item"><a class="nav-link" href="conceptos.html">Conceptos</a></li>
+						<li class="nav-item"><a class="nav-link" href="Apis.html">Api</a></li>
+						<li class="nav-item"><a class="nav-link active" aria-current="page" href="Frontend.html">Frontend</a></li>
+						<li class="nav-item"><a class="nav-link" href="backend.html">Backend</a></li>
+						<li class="nav-item"><a class="nav-link" href="cascada.html">CSS</a></li>
+						<li class="nav-item"><a class="nav-link" href="datos.html">Presentación</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<img src="imagenes/cabecera1.png" class="w-100" style="height: 300px; object-fit: cover; object-position: center;" alt="Cabecera del curso">
+	</header>
+
+	<main class="container my-5">
+		
+		<div class="text-center mb-5">
+			<h2 class="fw-bold" style="color: var(--lime-400);">Desarrollo Frontend</h2>
+			<p class="text-white-50">La cara visible de la web: todo lo que el usuario ve, toca y experimenta en el navegador.</p>
+		</div>
+
+		<!-- SECCIÓN CENTRAL -->
+		<section class="card-frontend-custom p-5 rounded-4 shadow-sm mb-5">
+			<h3 class="text-center fw-bold mb-4" style="color: var(--lime-400);">La Trinidad de la Web</h3>
+			<p class="text-center text-white-50 mb-5 mx-auto" style="max-width: 700px;">Para construir cualquier interfaz web moderna, estos tres lenguajes trabajan en equipo. Cada uno tiene una responsabilidad única y no pueden reemplazarse entre sí.</p>
+			
+			<div class="row g-4 text-center">
+				<!-- Pilar 1: HTML -->
+				<div class="col-md-4">
+					<div class="p-4 rounded-3 h-100" style="background-color: var(--navy-900); border: 1px solid var(--line);">
+						<h1 class="display-4 mb-3">🦴</h1>
+						<h4 class="fw-bold text-white">HTML5</h4>
+						<p class="fw-bold mb-2 small text-uppercase tracking-wide" style="color: var(--lime-400);">Estructura</p>
+						<p class="small text-white-50 mb-0">Es el esqueleto. Define qué es cada cosa: un título, un párrafo o una imagen. Su regla de oro es usar las etiquetas correctas para mejorar el SEO.</p>
+					</div>
+				</div>
+				<!-- Pilar 2: CSS -->
+				<div class="col-md-4">
+					<div class="p-4 rounded-3 h-100" style="background-color: var(--navy-900); border: 1px solid var(--line);">
+						<h1 class="display-4 mb-3">🎨</h1>
+						<h4 class="fw-bold text-white">CSS3</h4>
+						<p class="fw-bold mb-2 small text-uppercase tracking-wide" style="color: var(--lime-400);">Diseño</p>
+						<p class="small text-white-50 mb-0">Es la capa visual. Define colores, tamaños, posiciones y asegura que la página sea responsiva adaptándose a cualquier pantalla.</p>
+					</div>
+				</div>
+				<!-- Pilar 3: JavaScript -->
+				<div class="col-md-4">
+					<div class="p-4 rounded-3 h-100" style="background-color: var(--navy-900); border: 1px solid var(--line);">
+						<h1 class="display-4 mb-3">🧠</h1>
+						<h4 class="fw-bold text-white">JavaScript</h4>
+						<p class="fw-bold mb-2 small text-uppercase tracking-wide" style="color: var(--lime-400);">Interactividad</p>
+						<p class="small text-white-50 mb-0">Es el motor. Permite que la página reaccione a los clics, modifique el contenido en tiempo real y se conecte a las APIs del Backend.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SECCIÓN: Conceptos Avanzados -->
+		<div class="row g-4 mb-5">
+			<div class="col-md-6">
+				<div class="card card-frontend-custom h-100 shadow-sm">
+					<div class="card-body p-4">
+						<h5 class="fw-bold text-white mb-3"><span class="me-2" style="color: var(--lime-400);">⚡</span>Rendimiento y Optimización</h5>
+						<p class="text-white-50 small mb-0">Consiste en lograr que la página cargue rápido y se sienta fluida. Esto implica optimizar el tamaño de las imágenes, minimizar los archivos de código y evitar bloqueos en el hilo principal de ejecución.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card card-frontend-custom h-100 shadow-sm">
+					<div class="card-body p-4">
+						<h5 class="fw-bold text-white mb-3"><span class="me-2" style="color: var(--lime-400);">🧰</span>Frameworks y Librerías</h5>
+						<p class="text-white-50 small mb-0">Herramientas que estandarizan y aceleran el trabajo. <strong>Bootstrap</strong> facilita el CSS, mientras que librerías como <strong>React o Angular</strong> introducen el concepto de <em>Componentes reutilizables</em>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SECCIÓN DE EJEMPLOS PRÁCTICOS -->
+		<div class="text-center mt-5 mb-4">
+			<h3 class="fw-bold text-white">Laboratorio Práctico</h3>
+			<p class="text-white-50">Prueba en vivo cómo funciona cada tecnología por separado.</p>
+		</div>
+
+		<div class="row g-4">
+			<!-- Ejemplo HTML -->
+			<div class="col-12">
+				<div class="card card-frontend-custom shadow-sm">
+					<div class="card-header fw-bold py-3">Ejemplo HTML: El poder de las etiquetas</div>
+					<div class="card-body row align-items-center p-4">
+						<div class="col-md-6 border-end border-secondary">
+							<p class="text-white-50 small mb-2">El código (Lo que escribe el programador):</p>
+							<pre class="p-3 rounded text-light border border-secondary mb-0" style="background-color: var(--navy-900);"><code>&lt;h1&gt;Título Principal&lt;/h1&gt;
+&lt;p&gt;Un párrafo con &lt;strong&gt;texto en negrita&lt;/strong&gt;.&lt;/p&gt;
+&lt;input type="date"&gt;
+&lt;input type="range"&gt;</code></pre>
+						</div>
+						<div class="col-md-6 ps-md-4 mt-4 mt-md-0">
+							<p class="text-white-50 small mb-2">El resultado (Lo que dibuja el navegador sin CSS):</p>
+							<h3 class="text-white">Título Principal</h3>
+							<p class="text-white-50">Un párrafo con <strong class="text-white">texto en negrita</strong>.</p>
+							<input type="date" class="mb-2 d-block border border-secondary rounded p-1 text-light bg-dark">
+							<input type="range" class="d-block w-50">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Ejemplo CSS -->
+			<div class="col-12">
+				<div class="card card-frontend-custom shadow-sm">
+					<div class="card-header fw-bold py-3">Ejemplo CSS: Manipulando el modelo de caja</div>
+					<div class="card-body p-4 text-center">
+						<p class="text-white-50 mb-4">Presiona los botones para aplicarle estilos CSS en tiempo real a la caja.</p>
+						<div id="miCajaCss" class="caja-css mx-auto mb-4">Caja HTML</div>
+						<div class="d-flex justify-content-center gap-2 flex-wrap">
+							<button class="btn btn-outline-light" onclick="document.getElementById('miCajaCss').classList.toggle('css-redondo')">border-radius</button>
+							<button class="btn btn-outline-light" onclick="document.getElementById('miCajaCss').classList.toggle('css-color')">background-color</button>
+							<button class="btn btn-outline-light" onclick="document.getElementById('miCajaCss').classList.toggle('css-sombra')">box-shadow</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Ejemplo JS -->
+			<div class="col-12">
+				<div class="card card-frontend-custom shadow-sm mb-5">
+					<div class="card-header fw-bold py-3">Ejemplo JavaScript: Manipulando el DOM</div>
+					<div class="card-body p-4">
+						<div class="row align-items-center">
+							<div class="col-md-6">
+								<p class="text-white-50">JavaScript permite leer lo que hace el usuario y modificar el HTML sin recargar la página.</p>
+								<div class="input-group mb-3">
+									<input type="text" id="nombreUsuario" class="form-control bg-dark text-white border-secondary" placeholder="Escribe tu nombre aquí...">
+									<button class="btn" id="btnSaludar" style="background-color: var(--lime-400); color: var(--navy-900); font-weight: 700;">Generar Saludo</button>
+								</div>
+								<button class="btn btn-outline-light" id="btnContador">He hecho clic 0 veces</button>
+							</div>
+							<div class="col-md-6 text-center mt-4 mt-md-0 border-start border-secondary">
+								<h4 id="mensajeJs" class="text-white fw-bold">Esperando interacción...</h4>
+								<p class="text-white-50 small">Este texto cambiará gracias a JavaScript.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<footer class="bg-dark text-white text-center py-4 mt-5 border-top border-secondary">
+		<div class="container">
+			<p class="mb-0 text-white-50">© 2026 Tutor Web. Desarrollo web moderno.</p>
+		</div>
+	</footer>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+	<!-- Scripts interactivos para la sección de JavaScript -->
+	<script>
+		// Lógica del Saludo
+		document.getElementById('btnSaludar').addEventListener('click', function() {
+			let nombre = document.getElementById('nombreUsuario').value;
+			let mensaje = document.getElementById('mensajeJs');
+			
+			if(nombre.trim() === "") {
+				mensaje.textContent = "¡Por favor, ingresa un nombre!";
+				mensaje.className = "text-danger fw-bold";
+			} else {
+				mensaje.textContent = "¡Hola, " + nombre + "! Ya dominas el DOM.";
+				mensaje.className = "fw-bold";
+				mensaje.style.color = "var(--lime-400)";
+			}
+		});
+
+		// Lógica del Contador
+		let contador = 0;
+		document.getElementById('btnContador').addEventListener('click', function() {
+			contador++;
+			this.textContent = "He hecho clic " + contador + " veces";
+		});
+	</script>
+
+</body>
+</html>

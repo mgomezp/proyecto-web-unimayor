@@ -1,0 +1,138 @@
+[
+  {
+    "player": {
+      "name": "Radamel Falcao García",
+      "shortName": "Falcao",
+      "photo": "imagenes/falcao.png",
+      "team": {
+        "name": "Millonarios FC",
+        "teamColors": { "primary": "#0033a0", "text": "#ffffff" }
+      },
+      "position": "Delantero Centro",
+      "jerseyNumber": "9",
+      "height": 177,
+      "preferredFoot": "Derecho",
+      "marketValue": "800.000",
+      "country": { "name": "Colombia" }
+    }
+  },
+  {
+    "player": {
+      "name": "Carlos Bacca",
+      "shortName": "Bacca",
+      "photo": "imagenes/bacca.png",
+      "team": {
+        "name": "Junior de Barranquilla",
+        "teamColors": { "primary": "#d32f2f", "text": "#ffffff" }
+      },
+      "position": "Delantero Centro",
+      "jerseyNumber": "70",
+      "height": 181,
+      "preferredFoot": "Derecho",
+      "marketValue": "600.000",
+      "country": { "name": "Colombia" }
+    }
+  },
+  {
+    "player": {
+      "name": "James Rodríguez",
+      "shortName": "James",
+      "photo": "imagenes/james.png",
+      "team": {
+        "name": "Envigado FC",
+        "teamColors": { "primary": "#f57c00", "text": "#ffffff" }
+      },
+      "position": "Mediocampista",
+      "jerseyNumber": "10",
+      "height": 180,
+      "preferredFoot": "Izquierdo",
+      "marketValue": "5.000.000",
+      "country": { "name": "Colombia" }
+    }
+  },
+  {
+    "player": {
+      "name": "Luis Fernando Muriel",
+      "shortName": "Muriel",
+      "photo": "imagenes/muriel.png",
+      "team": {
+        "name": "Deportivo Cali",
+        "teamColors": { "primary": "#2e7d32", "text": "#ffffff" }
+      },
+      "position": "Delantero",
+      "jerseyNumber": "9",
+      "height": 179,
+      "preferredFoot": "Derecho",
+      "marketValue": "3.500.000",
+      "country": { "name": "Colombia" }
+    }
+  },
+  {
+    "player": {
+      "name": "Juan Guillermo Cuadrado",
+      "shortName": "Cuadrado",
+      "photo": "imagenes/cuadrado.png",
+      "team": {
+        "name": "Independiente Medellín",
+        "teamColors": { "primary": "#d32f2f", "text": "#ffffff" }
+      },
+      "position": "Extremo",
+      "jerseyNumber": "11",
+      "height": 176,
+      "preferredFoot": "Derecho",
+      "marketValue": "1.500.000",
+      "country": { "name": "Colombia" }
+    }
+  },
+  {
+    "player": {
+      "name": "Teófilo Gutiérrez",
+      "shortName": "Teo",
+      "photo": "imagenes/teofilo.png",
+      "team": {
+        "name": "Deportivo Cali",
+        "teamColors": { "primary": "#2e7d32", "text": "#ffffff" }
+      },
+      "position": "Delantero",
+      "jerseyNumber": "29",
+      "height": 181,
+      "preferredFoot": "Derecho",
+      "marketValue": "300.000",
+      "country": { "name": "Colombia" }
+    }
+  },
+  {
+    "player": {
+      "name": "Juan Fernando Quintero",
+      "shortName": "Quintero",
+      "photo": "imagenes/quintero.png",
+      "team": {
+        "name": "Junior de Barranquilla",
+        "teamColors": { "primary": "#d32f2f", "text": "#ffffff" }
+      },
+      "position": "Mediocampista",
+      "jerseyNumber": "10",
+      "height": 169,
+      "preferredFoot": "Izquierdo",
+      "marketValue": "2.500.000",
+      "country": { "name": "Colombia" }
+    }
+  },
+  {
+    "player": {
+      "name": "Jackson Martínez",
+      "shortName": "Jackson",
+      "photo": "imagenes/jackson.png",
+      "team": {
+        "name": "Independiente Medellín",
+        "teamColors": { "primary": "#d32f2f", "text": "#ffffff" }
+      },
+      "position": "Delantero Centro",
+      "jerseyNumber": "9",
+      "height": 185,
+      "preferredFoot": "Derecho",
+      "marketValue": "Retirado",
+      "country": { "name": "Colombia" }
+    }
+  }
+]

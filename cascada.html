@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS - Tutor HTML5 CSS</title>
+	<link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon" />
+
+	<!-- Fuentes -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+	
+	<!-- Estilos -->
+	<link rel="stylesheet" type="text/css" href="css/estilo2.css">
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+	<header>
+		<!-- Menú de Navegación -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand fw-bold" href="home.html">Tutor <span style="color:var(--lime-400);">Web</span></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Alternar navegación">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="menuNavegacion">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item"><a class="nav-link" href="home.html">Inicio</a></li>
+						<li class="nav-item"><a class="nav-link" href="conceptos.html">Conceptos</a></li>
+						<li class="nav-item"><a class="nav-link" href="Apis.html">Api</a></li>
+						<li class="nav-item"><a class="nav-link" href="Frontend.html">Frontend</a></li>
+						<li class="nav-item"><a class="nav-link" href="backend.html">Backend</a></li>
+						<li class="nav-item"><a class="nav-link active" aria-current="page" href="cascada.html">CSS</a></li>
+						<li class="nav-item"><a class="nav-link" href="datos.html">Presentación</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<img src="imagenes/cabecera1.png" class="w-100" style="height: 300px; object-fit: cover; object-position: center;" alt="Cabecera del curso">
+	</header>
+
+	<main class="container my-5">
+		
+		<!-- Título de la página -->
+		<div class="text-center mb-5">
+			<h2 class="fw-bold" style="color: var(--lime-400);">Hojas de Estilo en Cascada (CSS)</h2>
+			<p class="text-white-50">El lenguaje de diseño que da vida, color y estructura a la web.</p>
+		</div>
+
+		<!-- Concepto Inicial -->
+		<section class="card-css-custom p-5 rounded-4 shadow-sm mb-5">
+			<div class="row align-items-center">
+				<div class="col-md-8">
+					<h3 class="fw-bold mb-3" style="color: var(--lime-400);">¿Por qué se llama "en Cascada"?</h3>
+					<p class="text-white-50 mb-0">CSS funciona con una regla de prioridad. El navegador lee las reglas de diseño de arriba hacia abajo. Si le dices a un título que sea rojo en la línea 10, pero en la línea 50 le dices que sea azul, el azul ganará porque está más abajo en la "cascada" del código.</p>
+				</div>
+				<div class="col-md-4 text-center mt-4 mt-md-0 border-start border-secondary">
+					<span class="display-1">🌊</span>
+				</div>
+			</div>
+		</section>
+
+		<div class="row g-4 mb-5">
+			<!-- Anatomía de una Regla CSS -->
+			<div class="col-lg-6">
+				<div class="card card-css-custom h-100 shadow-sm">
+					<div class="card-header fw-bold py-3">
+						<span class="me-2" style="color: var(--lime-400);">⚙️</span>Anatomía de una Regla CSS
+					</div>
+					<div class="card-body p-4">
+						<p class="text-white-50 small mb-4">Todo el código CSS se basa en una estructura simple: seleccionas un elemento y le aplicas características.</p>
+						<div class="p-3 rounded border border-secondary text-center mb-4" style="font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; background-color: var(--navy-900);">
+							<span class="text-danger fw-bold">h1</span> { <br>
+							&nbsp;&nbsp;<span style="color: var(--teal-300);">color</span>: <span style="color: var(--lime-400);">blue</span>; <br>
+							}
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Tipos de Selectores -->
+			<div class="col-lg-6">
+				<div class="card card-css-custom h-100 shadow-sm">
+					<div class="card-header fw-bold py-3">
+						<span class="me-2" style="color: var(--lime-400);">🎯</span>Tipos de Selectores
+					</div>
+					<div class="card-body p-4">
+						<div class="mb-3">
+							<h6 class="fw-bold text-white mb-1">1. Selector de Etiqueta</h6>
+							<code class="px-2 py-1 rounded border border-secondary" style="background-color: var(--navy-900); color: var(--lime-400);">p { color: red; }</code>
+						</div>
+						<div class="mb-3">
+							<h6 class="fw-bold text-white mb-1">2. Selector de Clase (.)</h6>
+							<code class="px-2 py-1 rounded border border-secondary" style="background-color: var(--navy-900); color: var(--lime-400);">.boton { background: blue; }</code>
+						</div>
+						<div>
+							<h6 class="fw-bold text-white mb-1">3. Selector de ID (#)</h6>
+							<code class="px-2 py-1 rounded border border-secondary" style="background-color: var(--navy-900); color: var(--lime-400);">#cabecera { height: 100px; }</code>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- El Modelo de Caja (Box Model) -->
+		<section class="card-css-custom p-5 rounded-4 shadow-sm mb-5">
+			<div class="text-center mb-4">
+				<h3 class="fw-bold" style="color: var(--lime-400);">El Modelo de Caja (Box Model)</h3>
+				<p class="text-white-50">En CSS, absolutamente todo es una caja rectangular. Entender estas cuatro capas es el secreto para dominar el diseño web.</p>
+			</div>
+
+			<div class="row align-items-center">
+				<div class="col-lg-6 mb-4 mb-lg-0">
+					<div class="box-model-margin">
+						<span class="text-danger small fw-bold d-block text-start mb-2">1. MARGIN (Margen Exterior)</span>
+						<div class="box-model-border">
+							<span class="small fw-bold d-block text-start mb-2" style="color: var(--lime-400);">2. BORDER (Borde)</span>
+							<div class="box-model-padding">
+								<span class="text-success small fw-bold d-block text-start mb-2">3. PADDING (Relleno Interior)</span>
+								<div class="box-model-content">
+									4. CONTENIDO
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 ps-lg-5">
+					<ul class="list-group list-group-flush text-white-50 bg-transparent">
+						<li class="list-group-item px-0 py-3 bg-transparent border-secondary">
+							<h6 class="fw-bold text-danger mb-1">Margin (Margen)</h6>
+							<p class="small mb-0">Espacio transparente hacia afuera. Empuja a otros elementos para que no se peguen.</p>
+						</li>
+						<li class="list-group-item px-0 py-3 bg-transparent border-secondary">
+							<h6 class="fw-bold mb-1" style="color: var(--lime-400);">Border (Borde)</h6>
+							<p class="small mb-0">La línea que envuelve la caja. Puede ser gruesa, punteada o de colores.</p>
+						</li>
+						<li class="list-group-item px-0 py-3 bg-transparent border-0">
+							<h6 class="fw-bold text-success mb-1">Padding (Relleno)</h6>
+							<p class="small mb-0">Espacio transparente hacia adentro. Evita que el contenido choque con el borde.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Explicación de Bordes y Muestra de Audio -->
+		<div class="row g-4 mb-5">
+			
+			<!-- Explicación de los Bordes -->
+			<div class="col-lg-7">
+				<div class="card card-css-custom h-100 shadow-sm">
+					<div class="card-header fw-bold py-3">
+						<span class="me-2" style="color: var(--lime-400);">🖼️</span>Jugando con los Bordes en CSS
+					</div>
+					<div class="card-body p-4 text-center">
+						<p class="text-white-50 small mb-4">La propiedad <code>border</code> se compone de tres valores principales: <strong>grosor</strong>, <strong>estilo</strong> y <strong>color</strong>. Además, con <code>border-radius</code> podemos suavizar las esquinas.</p>
+						
+						<div class="d-flex flex-column flex-md-row justify-content-between gap-3">
+							<div class="borde-solido p-3 w-100 rounded">
+								<span class="fw-bold small text-white d-block">Borde Sólido</span>
+								<code class="small text-white-50">border: 4px solid;</code>
+							</div>
+							<div class="borde-punteado p-3 w-100 rounded">
+								<span class="fw-bold small text-white d-block">Borde Punteado</span>
+								<code class="small text-white-50">border: 4px dashed;</code>
+							</div>
+							<div class="borde-redondeado p-3 w-100">
+								<span class="fw-bold small text-white d-block">Borde Redondeado</span>
+								<code class="small text-white-50">border-radius: 30px;</code>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Muestra de Audio -->
+			<div class="col-lg-5">
+				<div class="card card-css-custom h-100 shadow-sm">
+					<div class="card-header fw-bold py-3">
+						<span class="me-2" style="color: var(--lime-400);">🎧</span>Muestra de Audio HTML5
+					</div>
+					<div class="card-body p-4 d-flex flex-column justify-content-center align-items-center text-center">
+						<p class="text-white-50 small mb-4">Usando la etiqueta <code>&lt;audio&gt;</code> podemos incrustar archivos multimedia directamente en la web. El diseño del reproductor lo define el navegador.</p>
+						
+						<audio controls class="w-100 shadow-sm rounded-pill">
+							<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+							<source src="audio/muestra.mp3" type="audio/mpeg">
+							Tu navegador no soporta el elemento de audio.
+						</audio>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- SECCIÓN DE VIDEOS -->
+		<div class="text-center mt-5 mb-4">
+			<h3 class="fw-bold text-white">Videoteca de Aprendizaje</h3>
+			<p class="text-white-50">Refuerza lo aprendido explorando estos 3 conceptos fundamentales en video.</p>
+		</div>
+
+		<div class="row g-4 mb-5">
+			
+			<!-- Video 1 -->
+			<div class="col-lg-4">
+				<div class="card card-css-custom h-100 shadow-sm overflow-hidden">
+					<div class="ratio ratio-16x9 bg-dark">
+						<iframe src="https://www.youtube.com/embed/vRyb9AVG5L8" title="Curso de CSS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+					<div class="card-body p-4">
+						<span class="badge border border-secondary mb-2" style="background-color: var(--navy-900); color: var(--lime-400);">Fundamentos</span>
+						<h5 class="fw-bold text-white">1. Introducción a CSS</h5>
+						<p class="text-white-50 small mb-0">Aprende desde cero cómo conectar tu archivo CSS con el HTML y aplicar reglas de estilo para cambiar toda la estructura visual.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Video 2 -->
+			<div class="col-lg-4">
+				<div class="card card-css-custom h-100 shadow-sm overflow-hidden">
+					<div class="ratio ratio-16x9 bg-dark">
+						<iframe src="https://www.youtube.com/embed/JFSKLwkM-2o" title="Tutorial Flexbox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+					<div class="card-body p-4">
+						<span class="badge border border-secondary mb-2" style="background-color: var(--navy-900); color: var(--lime-400);">Maquetación</span>
+						<h5 class="fw-bold text-white">2. Flexbox en Minutos</h5>
+						<p class="text-white-50 small mb-0">Olvida las tablas. Descubre cómo alinear elementos perfectamente y crear diseños adaptables con el sistema de Flexbox.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Video 3 -->
+			<div class="col-lg-4">
+				<div class="card card-css-custom h-100 shadow-sm overflow-hidden">
+					<div class="ratio ratio-16x9 bg-dark">
+						<iframe src="https://www.youtube.com/embed/wZniZEbPAzk" title="CSS Completo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+					<div class="card-body p-4">
+						<span class="badge border border-secondary mb-2" style="background-color: var(--navy-900); color: var(--lime-400);">Profundización</span>
+						<h5 class="fw-bold text-white">3. CSS Completo</h5>
+						<p class="text-white-50 small mb-0">Un repaso exhaustivo para entender cómo aplicar estilos a páginas reales de forma moderna y eficiente.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</main>
+
+	<footer class="bg-dark text-white text-center py-4 mt-5 border-top border-secondary">
+		<div class="container">
+			<p class="mb-0 text-white-50">© 2026 Tutor Web. Desarrollo web moderno.</p>
+		</div>
+	</footer>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
